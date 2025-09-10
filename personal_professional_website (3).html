@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Azemeraw Wubalem Azeze — Professional Website</title>
+  <meta name="description" content="Professional portfolio and contact page for Azemeraw Wubalem Azeze — Rock Mechanics and Geosciences Researcher." />
+  <meta name="author" content="Azemeraw Wubalem Azeze" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#7c3aed;--glass: rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#e6eef8;background:linear-gradient(180deg,var(--bg),#071022);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    .container{max-width:1100px;margin:36px auto;padding:28px;animation:fadeIn 1.5s ease-in-out}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;position:sticky;top:0;background:rgba(15,23,36,0.95);backdrop-filter:blur(8px);padding:12px 28px;z-index:1000}
+    .brand{display:flex;align-items:center;gap:12px;animation:slideIn 1.2s ease-in-out}
+    .avatar{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#2dd4bf);display:flex;align-items:center;justify-content:center;font-weight:700;color:#042027;animation:pulse 3s infinite}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600;position:relative}
+    nav a::after{content:'';position:absolute;left:0;bottom:-4px;width:0;height:2px;background:var(--accent);transition:width .3s}
+    nav a:hover::after{width:100%}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;margin-top:36px;animation:fadeUp 1.5s ease-in-out}
+    .card{background:var(--card);padding:22px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.7);transition:transform .3s;opacity:0;transform:translateY(20px)}
+    .card.visible{opacity:1;transform:translateY(0);transition:opacity 0.6s ease-out, transform 0.6s ease-out}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin-top:8px}
+    .cta{margin-top:18px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:700;transition:background .3s, transform .2s}
+    .btn:hover{background:#6d28d9;transform:scale(1.05)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;animation:fadeUp 1.8s ease-in-out}
+    .chip{padding:8px 10px;background:var(--glass);border-radius:999px;font-weight:600;color:var(--muted);transition:transform .3s}
+    .chip:hover{transform:scale(1.1)}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+    .project{padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border:1px solid rgba(255,255,255,0.03);transition:transform .3s;opacity:0;transform:translateY(20px)}
+    .project.visible{opacity:1;transform:translateY(0);transition:opacity 0.6s ease-out, transform 0.6s ease-out}
+    .project:hover{transform:translateY(-8px)}
+    footer{margin-top:36px;color:var(--muted);display:flex;justify-content:space-between;align-items:center;animation:fadeIn 2s ease-in-out}
+    @media (max-width:860px){.hero{grid-template-columns:1fr}.container{margin:18px 16px}}
+    .muted{color:var(--muted)}
+    .contact-form input,.contact-form textarea{width:100%;padding:10px;margin-top:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:#071125;color:#e6eef8;transition:border .3s}
+    .contact-form input:focus,.contact-form textarea:focus{border:1px solid var(--accent);outline:none}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    @media (max-width:560px){.contact-grid{grid-template-columns:1fr}}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes slideIn{from{opacity:0;transform:translateX(-30px)}to{opacity:1;transform:translateX(0)}}
+    @keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.08)}100%{transform:scale(1)}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">AZ</div>
+        <div>
+          <div style="font-weight:800">Azemeraw Wubalem Azeze</div>
+          <div class="muted" style="font-size:13px">PhD Fellow in Rock Mechanics & Geosciences</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="card">
+          <h1>Hi — I'm Azemeraw Wubalem Azeze.</h1>
+          <p class="lead">PhD Candidate in Earth Sciences (Applied Geology) at the University of Turin. My research focuses on rock mechanics, environmental degradation, and geohazard assessment, combining laboratory experiments, numerical modeling, and Earth observation data.</p>
+          <div class="cta">
+            <a class="btn" href="#contact">Get in touch</a>
+            <a class="btn" style="background:transparent;color:var(--muted);margin-left:10px;border:1px solid rgba(255,255,255,0.04)" href="#publications">See my work</a>
+          </div>
+
+          <div class="skills">
+            <div class="chip">Rock Mechanics</div>
+            <div class="chip">DIC / DEM</div>
+            <div class="chip">GIS & Remote Sensing</div>
+            <div class="chip">Numerical Modeling</div>
+            <div class="chip">Machine Learning</div>
+          </div>
+        </div>
+
+        <section id="projects">
+          <h3 style="margin-top:18px;color:#dbeafe">Research Highlights</h3>
+          <div class="projects">
+            <div class="project"><strong>Freeze–Thaw & Acid Weathering</strong><p class="muted">Lab simulations on carbonate and basalt rocks with UCS, BTS, UPV, porosity, and density analysis.</p></div>
+            <div class="project"><strong>Landslide Susceptibility Mapping</strong><p class="muted">GIS and remote sensing integrated with statistical and deterministic modeling in Ethiopia.</p></div>
+            <div class="project"><strong>Flood Hazard Assessment</strong><p class="muted">Modeling floods using WetSpass, satellite data, and geospatial tools in Gondar region.</p></div>
+          </div>
+        </section>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h4 style="margin:0">Snapshot</h4>
+          <p class="muted">PhD Candidate • Rock mechanics • Hazard assessment</p>
+          <hr style="border:none;height:1px;background:rgba(255,255,255,0.03);margin:12px 0">
+          <dl style="margin:0;color:var(--muted)">
+            <dt style="font-weight:700">Location</dt>
+            <dd>Turin, Italy</dd>
+            <dt style="font-weight:700;margin-top:8px">Email</dt>
+            <dd><a href="mailto:azemerawwubalem.azeze@unito.it">azemerawwubalem.azeze@unito.it</a></dd>
+            <dt style="font-weight:700;margin-top:8px">Phone</dt>
+            <dd>+39 351 495 8516</dd>
+          </dl>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h4 style="margin:0">Download</h4>
+          <p class="muted" style="margin-top:6px">Full Resume / CV</p>
+          <a class="btn" href="#cv" style="display:inline-block;margin-top:10px">View CV</a>
+        </div>
+      </aside>
+    </section>
+
+    <section id="publications" style="margin-top:26px">
+      <div class="card">
+        <h3 style="margin-top:0">Publications</h3>
+        <ul class="muted">
+          <li>Micromechanical Effects of Chemical Weathering on Carrara Marble. <i>Eurock 2025</i></li>
+          <li>Effects of rock texture on digital image correlation. <i>Geosciences</i>, 15(4), 145. <a href="https://doi.org/10.3390/geosciences15040145">DOI</a></li>
+          <li>Geological and geotechnical investigation of basement rocks and Mesozoic sandstone. <i>Rock Mech Rock Eng</i>. <a href="https://doi.org/10.1007/s00603-025-04450-7">DOI</a></li>
+          <li>Mapping landslide susceptibility in Northwestern Ethiopia. <i>JDMLM</i>. <a href="https://doi.org/10.15243/jdmlm.2025.122.7095">DOI</a></li>
+          <li>Modeling of land suitability for surface irrigation. <i>Heliyon</i>. <a href="https://doi.org/10.1016/j.heliyon.2023.e13937">DOI</a></li>
+          <li>Landslide susceptibility modeling using entropy and frequency ratio. <i>Geotech Geol Eng</i>. <a href="https://doi.org/10.1007/s10706-022-02214-6">DOI</a></li>
+          <li>Comparison of flood susceptibility mapping methods. <i>Open Geosciences</i>. <a href="https://doi.org/10.1515/geo-2020-0329">DOI</a></li>
+          <li>Landslide inventory, susceptibility, hazard, and risk mapping. <i>IntechOpen</i>. <a href="https://doi.org/10.5772/intechopen.100504">DOI</a></li>
+          <li>Impact of DEM resolution on landslide susceptibility. <i>Arab J Geosci</i>. <a href="https://doi.org/10.1007/s12517-022-10241-z">DOI</a></li>
+          <li>... and more (see full CV)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="cv" style="margin-top:26px">
+      <div class="card">
+        <h3 style="margin-top:0">CV & Experience</h3>
+        <p class="muted"><b>Education:</b> PhD in Earth Sciences (Applied Geology), MSc in Engineering Geology, BSc in Geology, Higher Diploma in Teaching Methodology.<br>
+        <b>Professional Experience:</b> Lecturer & Researcher at University of Gondar (2016–2023), PhD Research Fellow at University of Turin (2023–2026).<br>
+        <b>Skills:</b> GIS & Remote Sensing, PFC, GeoStudio, Python, MATLAB, SEM-EDS, DIC, UCS/BTS testing, scientific writing.<br>
+        <b>Memberships:</b> EGMEA, Ethiopian Teacher Association, Ethiopian Red Cross Society.<br>
+        <b>Awards:</b> MSc Scholarship, PhD Scholarship, Best Paper Award (ICGDR 2021).</p>
+      </div>
+    </section>
+
+    <section id="conferences" style="margin-top:26px">
+      <div class="card">
+        <h3 style="margin-top:0">Conferences & Seminars</h3>
+        <ul class="muted">
+          <li>ISRM International Symposium Eurock 2025 – Trondheim, Norway (oral)</li>
+          <li>XXVIII National Conference on Geotechnics – Venice 2025 (poster)</li>
+          <li>5th Annual Geoscience Conference, Bahir Dar University 2022 (oral)</li>
+          <li>International Research Symposium on Digital Economy, ASTU 2023 (oral)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="training" style="margin-top:26px">
+      <div class="card">
+        <h3 style="margin-top:0">Professional Development</h3>
+        <ul class="muted">
+          <li>IAEG Summer School, Aosta, Italy 2025</li>
+          <li>LARAM Summer School 2025, Salerno, Italy</li>
+          <li>Machine Learning for Optical Image Analysis, Padova University 2025</li>
+          <li>Deep Learning in Environmental Engineering, Polytechnic University of Turin 2025</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:18px">
+      <div class="card contact-form">
+        <h3 style="margin-top:0">Get in touch</h3>
+        <p class="muted">Fill the form or email me at <a href="mailto:azemerawwubalem.azeze@unito.it">azemerawwubalem.azeze@unito.it</a></p>
+        <form action="https://formspree.io/f/yourformid" method="POST">
+          <div class="contact-grid">
+            <input name="name" placeholder="Your name" required />
+            <input name="email" placeholder="Your email" type="email" required />
+          </div>
+          <input name="subject" placeholder="Subject" />
+          <textarea name="message" rows="5" placeholder="Message"></textarea>
+          <button class="btn" style="margin-top:10px" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="muted">© <span id="year"></span> Azemeraw Wubalem Azeze</div>
+      <div class="muted">Follow: <a href="#" style="color:var(--muted);text-decoration:none">LinkedIn</a> • <a href="#" style="color:var(--muted);text-decoration:none">ResearchGate</a></div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {threshold:0.1});
+    document.querySelectorAll('.card, .project').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
